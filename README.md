@@ -68,3 +68,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # GitHub Actions
 
 Documentation: https://docs.github.com/en/actions
+Continuous Integration Workflows: https://docs.github.com/en/actions/writing-workflows/quickstart
