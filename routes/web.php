@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GuitarController;
 use App\Http\Controllers\ChirpController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -28,5 +29,7 @@ Route::middleware('auth')->group(function () {
 Route::resource('chirps', ChirpController::class)
     ->only(['index', 'store', 'update', 'destroy'])
     ->middleware(['auth', 'verified']);
+
+Route::get('/guitars', [GuitarController::class, 'index'])->name('guitars.index');
 
 require __DIR__.'/auth.php';
